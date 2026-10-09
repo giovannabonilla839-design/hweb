@@ -3,16 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>herramientas web</title>
+    <meta name="description" content="Página web autobiográfica estructurada con HTML5 semántico.">
+    <title>Biografía - Giovanna Bonilla Espejo</title>
 </head>
 <body>
-    <h1> Giovanna Bonilla Espejo </h1>
-    <p> 202421210 soy de Puebla naci el 1 de  marzo de 2006 </p>
-    <img src="/C/:xampp/htdocs/web/ejemplos/Foto Practica.jpg" alt="No disponible">
-     <!--img src="C\:xampp\htdocs\web\ejemplos\Foto Practica.jpg" alt="No disponible"-->
-    <!--img src="http://localhost/hweb/ejemplos/Foto Practica.jpg" alt="No disponible"-->
-</body>
-<header>
+
+    <header>
         <h1>Giovanna Bonilla Espejo</h1>
         <p>Estudiante de Ingeniería de Tecnologías de la Información / Apasionada por la Tecnología</p>
         
@@ -26,4 +22,105 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <figure>
+                <img src="https://via.placeholder.com/150" alt="Fotografía de perfil de Giovanna">
+                <figcaption>Fotografía académica reciente.</figcaption>
+            </figure>
+            <p>
+            Mi nombre es Giovanna Bonilla Espejo, soy de Puebla, y estudio Ingeniería en Tecnologías de la Información en la BUAP. Me considero una persona responsable, talentosa y muy alegre.
+            Me gusta aprender cosas nuevas, y sobre todo me gusta mi carrera; me emociona la idea de poder realizar proyectos dentro de esta área y deseo seguir mejorando mis habilidades.
+            </p>
+        </section>
+
+        <section id="formacion">
+            <h2>Formación Académica</h2>
+            <article>
+                <h3>Licenciatura en Tecnología / Computación</h3>
+                <p><strong>Institución:</strong> Universidad (BUAP)</p>
+                <p><strong>Periodo:</strong> 2026 - Presente</p>
+                <p>Actualmente cursando asignaturas enfocadas en desarrollo web, estructuras de datos y desarrollo de software.</p>
+            </article>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos y Habilidades Técnicas</h2>
+            
+            <h3>Habilidades Destacadas</h3>
+            <ul>
+                <li>HTML5 y marcado semántico</li>
+                <li>Lógica de programación y algoritmos</li>
+                <li>Control de versiones con Git</li>
+            </ul>
+
+            <h3>Proyectos Recientes</h3>
+            <ol>
+                <li>
+                    <strong>Sitio Web Autobiográfico:</strong> Implementación de mejora progresiva y semántica en HTML.
+                </li>
+                <li>
+                    <strong>Repositorio de Prácticas:</strong> Control de evidencias académicas en GitHub.
+                </li>
+            </ol>
+        </section>
+
+        <section id="intereses">
+            <h2>Intereses y Pasatiempos</h2>
+            <p>Áreas de interés profesional y personal:</p>
+            <dl>
+                <dt>Desarrollo Web</dt>
+                <dd>Diseño de interfaces accesibles, estándares W3C y optimización.</dd>
+                
+                <dt>Música / Lectura</dt>
+                <dd>Me gusta mucho dibujar mientras escucho música y me gusta ver series.</dd>
+            </dl>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes enviarme un mensaje directamente utilizando el siguiente formulario:</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Formulario de Contacto</legend>
+
+                    <div>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej. Giovanna Bonilla Espejo">
+                    </div>
+
+                    <div>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" required placeholder="giovanna839@gmail.com">
+                    </div>
+
+                    <div>
+                        <label for="asunto">Asunto:</label>
+                        <select id="asunto" name="asunto">
+                            <option value="academico">Consulta Académica</option>
+                            <option value="colaboracion">Colaboración / Proyecto</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+
+                    <button type="submit">Enviar Mensaje</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Giovanna Bonilla Espejo. Todos los derechos reservados.</p>
+        <p>Desarrollado bajo principios de accesibilidad y Mejora Progresiva.</p>
+    </footer>
+
+</body>
 </html>
