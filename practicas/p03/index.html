@@ -9,13 +9,15 @@
     <!-- ========================================== -->
     <!-- EJERCICIO 1: Receta de Guacamole -->
     <!-- ========================================== -->
-    <section>
+    <!-- Encapsulamiento del contenido en la etiqueta semántica <article>. -->
+    <article class="receta">
+<header>
         <h1>Guacamole (clásico)</h1>
         
         <blockquote>
-            "Existe un condimento que no puede faltar en toda mesa mexicana. Algunos lo consideran una salsa, otros un aderezo, algunos incluso le llaman ensalada, otros simplemente le llaman por su nombre propio: Guacamole."
+           <p> "Existe un condimento que no puede faltar en toda mesa mexicana. Algunos lo consideran una salsa, otros un aderezo, algunos incluso le llaman ensalada, otros simplemente le llaman por su nombre propio: Guacamole."</p>
         </blockquote>
-
+</header>  <!-- Uso de <article> y <header> para la sección de la receta.-->
         <p>Aunque el guacamole se prepara de diferentes formas según la zona de la que provenga la receta, la base suele ser la misma. Aquí te mostramos una receta muy completa para preparar esta conocida salsa mexicana:</p>
 
         <h2>Ingredientes</h2>
@@ -28,7 +30,9 @@
             <li>1 manojo de cilantro fresco</li>
             <li>Sal</li>
         </ul>
+</section>
 
+        <section>
         <h2>Instrucciones</h2>
         <ol>
             <li>Lavar bien el tomate y el manojo de cilantro</li>
@@ -45,11 +49,11 @@
 
         <p>En caso de no contar con un molcajete, se puede utilizar un tenedor procurando que la pulpa del aguacate se mezcle con los demás ingredientes. Debe quedarnos un guacamole con los trozos visibles, pero opcionalmente puede pasarse por la batidora para dejarlo más cremoso y con una textura más uniforme.</p>
     </section>
-
+<!-- CAMBIO: Uso de listas ordenadas <ol> para la preparación. -->
     <!-- ========================================== -->
     <!-- EJERCICIO 2: Artículo de MasterChef        -->
     <!-- ========================================== -->
-    <article>
+    </article>
         <header>
             <p>publicado por MasterChef, <time datetime="2018-11-15">November 15, 2018</time></p>
         </header>
