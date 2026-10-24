@@ -2,39 +2,41 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Guacamole y Artículo - Cocina para Geeks</title>
+    <title>Master-Chef Geek: Blog</title>
 </head>
 <body>
-<!-- Comentario explicativo sobre los elementos utilizados (Inciso m):
-         - article: Se utiliza para identificar contenido autónomo e independiente dentro del sitio, como cada entrada del blog.
-         - section: Permite agrupar temáticamente el contenido dentro de un artículo, como las secciones de "Aperitivos" y "Platillos principales".
-         - div: Es un contenedor genérico de bloque sin significado semántico, útil para agrupar elementos por fines de diseño o estructuración (como el bloque "acerca").
-         - span: Es un contenedor genérico en línea que se usa para aplicar estilos o clasificar fragmentos de texto específicos (como la clase "precio").
-    -->
-<!-- Encabezado global y navegación -->
 
-<header>
-        <h1>BLOG DEL MASTER-CHEF GEEK</h1>
-<nav>
-     <ul> 
-              <li><a href="#inicio">Inicio</a></li>
+    <!-- Comentario explicativo requerido (Inciso m):
+         - article: Se utiliza para identificar contenido autónomo e independiente, como cada entrada del blog.
+         - section: Permite agrupar temáticamente el contenido dentro de un artículo (ej. Aperitivos y Platillos principales).
+         - div: Contenedor genérico en bloque sin significado semántico específico, usado para agrupar elementos (bloque "acerca").
+         - span: Contenedor genérico en línea usado para aplicar estilos a fragmentos de texto (como la clase "precio").
+    -->
+
+    <!-- Encabezado global y navegación -->
+    <header>
+        <h1>Blog del Master-Chef Geek</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#menu">Menú</a></li>
                 <li><a href="#blog">Blog</a></li>
-                <li><a href="#contacto">Contacto</a></li>     
-     </ul>
-</nav>
-</header> 
- <!-- PRIMER ARTICULO: Menu de otoño-->
-        <article>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <header>
-        <h2>
-         <p>publicado por NEOJC,<time datetime="2019-08-11" pubdate>11 de agosto de 2019 </time></p>
+    <!-- Primer Artículo: Menú de Otoño -->
+    <article>
+        <header>
+            <h2>Menú de Otoño</h2>
+            <p>publicado por NEOJC, <time datetime="2019-08-11" pubdate>11 de agosto de 2019</time></p>
         </header>
-<p>Nuestro chef ha estado ocupado armando el menú completo para los meses de invierno. Prepárense para probar estos aperitivos y platillos principales para estos largos meses</p>
-   
-<!-- seccion 1: APERITIVOS-->
-<section id="aperitivos">
+
+        <p>Nuestro chef ha estado ocupado armando el menú completo para los meses de invierno. Prepárense para probar estos aperitivos y platillos principales para estos largos meses.</p>
+
+        <!-- Sección 1: Aperitivos -->
+        <section id="aperitivos">
             <h3>Aperitivos</h3>
             <dl>
                 <dt>Zurrón de frijol negro</dt>
@@ -50,7 +52,27 @@
                 </dd>
             </dl>
         </section>
-        <!-- Segundo Artículo: Bajito y Despacito -->
+
+        <!-- Sección 2: Platillos principales -->
+        <section id="platillosprincipales">
+            <h3>Platillos principales</h3>
+            <dl>
+                <dt>Brochetas de camarones adobados con salsa de cacahuate</dt>
+                <dd>
+                    Brochetas de camarón marinados con zumo de limón, ajo, y salsa de pescado, asados a la parrilla. Servidos con salsa picante de cacahuate y arroz jazmín. 
+                    <span class="precio">$259.00</span>
+                </dd>
+
+                <dt class="nuevoarticulo">Pollo asado a las brasas con plátanos fritos &mdash; <strong>&iexcl;nuevo platillo!</strong></dt>
+                <dd>
+                    Pollo de rancho asado a fuego lento, condimentado con salsa picante y salsa Jerk, y servido con tostones de plátanos fritos y mango fresco. 
+                    <span class="precio">$249.00</span>
+                </dd>
+            </dl>
+        </section>
+    </article>
+
+    <!-- Segundo Artículo: Bajito y Despacito -->
     <article>
         <header>
             <h2>Bajito y Despacito</h2>
@@ -61,6 +83,7 @@
 
         <p>La siguiente semana, prepararemos Salmon Sous Vide con Eneldo Holandés. Para asistir al programa, contáctanos antes del 30 de Noviembre.</p>
     </article>
+
     <!-- Pie de página -->
     <footer>
         <div id="acerca">
@@ -69,5 +92,6 @@
         </div>
         <p><small>2019 copyright &copy; Grupo Marter-Chef, Derechos reservados</small></p>
     </footer>
+
 </body>
 </html>
